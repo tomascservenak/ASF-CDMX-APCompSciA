@@ -1,0 +1,33 @@
+/* *** New Project ***
+/* Goal: Take String input from user and use that input to produce a deliberate output of buzzwords, non-offensive insults, etc.
+/* Details: 1. You must make a TESTER or CLIENT class that will make objects of the class PhraseOMatic and call the method makePhrase.
+/* 2. the Tester class must take user input
+/* 3. you must make another method of makePhrase to overload it with parameters from given from the String characters of user input
+/* see this URL for an example of a successful implementation 
+/* http://www.slate.com/articles/news_and_politics/low_concept/2015/06/justice_scalia_insult_generator_how_the_supreme_court_justice_would_mock.html
+*/
+
+// This class creates objects that produce random 3 word phrases
+public class PhraseOMatic 
+{ 
+  public static String makePhrase() // make three sets of words to choose from 
+    
+  String[] wordListOne = {"24/7","multi-Tier","30,OOO foot","B-to-B","win-win","frontend", "web-based" ,"pervasive" , "smart", "six-sigma","critical-path", "dynamic"}; 
+  String[] wordListTwo = {"empowered", "sticky", "valued-added", "oriented", "centric", "distributed", "clustered", "branded","outside-the-box", "positioned", "networked", "focused", "leveraged", "aligned", "targeted", "shared", "cooperative", "accelerated"}; 
+  String[] wordListThree = {"process", "tipping point", "solution", "architecture", "core competency", "strategy", "mindshare", "portal", "space", "vision", "paradigm", "mission"}; 
+  // find out how many words are in each list 
+  int oneLength = wordListOne.length; 
+  int twoLength = wordListTwo.length; 
+  int threeLength wordListThree.length; // generate int randl int rand2 
+  int rand3 = three (int) (int) (int) random numbers // to pull random words from each list 
+    
+    
+  (Math.randomO * oneLength); 
+  (Math .randomO * twoLength); 
+  (Math.randomO * threeLength); 
+  //now build a phrase 
+    String phrase = wordListOne[randl] + " " + wordListTwo[rand2] + " " + wordListThree[rand3] ; 
+  // now return it 
+      
+      
+      return ("What we need is a " + phrase); 
