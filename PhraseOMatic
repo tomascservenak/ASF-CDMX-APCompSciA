@@ -8,26 +8,90 @@
 */
 
 // This class creates objects that produce random 3 word phrases
-public class PhraseOMatic 
-{ 
-  public static String makePhrase() // make three sets of words to choose from 
-    
-  String[] wordListOne = {"24/7","multi-Tier","30,OOO foot","B-to-B","win-win","frontend", "web-based" ,"pervasive" , "smart", "six-sigma","critical-path", "dynamic"}; 
-  String[] wordListTwo = {"empowered", "sticky", "valued-added", "oriented", "centric", "distributed", "clustered", "branded","outside-the-box", "positioned", "networked", "focused", "leveraged", "aligned", "targeted", "shared", "cooperative", "accelerated"}; 
-  String[] wordListThree = {"process", "tipping point", "solution", "architecture", "core competency", "strategy", "mindshare", "portal", "space", "vision", "paradigm", "mission"}; 
-  // find out how many words are in each list 
-  int oneLength = wordListOne.length; 
-  int twoLength = wordListTwo.length; 
-  int threeLength wordListThree.length; // generate int randl int rand2 
-  int rand3 = three (int) (int) (int) random numbers // to pull random words from each list 
-    
-    
-  (Math.randomO * oneLength); 
-  (Math .randomO * twoLength); 
-  (Math.randomO * threeLength); 
-  //now build a phrase 
-    String phrase = wordListOne[randl] + " " + wordListTwo[rand2] + " " + wordListThree[rand3] ; 
-  // now return it 
-      
-      
-      return ("What we need is a " + phrase); 
+// create semi-random three word string paired to 
+import java.util.Scanner;
+// the constructor is the class if no other methods with 
+//same name exist
+public class PhraseMatic {
+	
+	// generate three different types of constructors
+	// first constructor comes with given String "What we need is " + phrase
+	
+	// second constructor gives a user created string output, 
+	//@param String input from Scanner class
+	
+	// third constructor gives user created String output,
+	//@param String input for phrase, plus takes user's name 
+	// and generates user output based on the char value of user's supplied name
+	/*public static void main (String args[])
+	{
+		
+		 String[] wordListOne = {"24/7","multi-Tier","30,OOO foot","B-to-B","win-win","frontend", "web-based" ,"pervasive" , "smart", "six-sigma","critical-path", "dynamic"}; 
+		 String[] wordListTwo = {"empowered", "sticky", "valued-added", "oriented", "centric", "distributed", "clustered", "branded","outside-the-box", "positioned", "networked", "focused", "leveraged", "aligned", "targeted", "shared", "cooperative", "accelerated"}; 
+		 String[] wordListThree = {"process", "tipping point", "solution", "architecture", "core competency", "strategy", "mindshare", "portal", "space", "vision", "paradigm", "mission"}; 
+		 
+		 // find out how many words are in each list 
+		  int oneLength = wordListOne.length; 
+		  int twoLength = wordListTwo.length; 
+		  int threeLength = wordListThree.length; 
+		  
+		  int rand1 = (int) (Math.random() * oneLength);
+		  int rand2 = (int) (Math.random() * twoLength);
+		  int rand3 = (int) (Math.random() * threeLength);
+		  
+		  // concatenate the strings to phrase
+		  String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
+		  System.out.print ("What we need is a " + phrase);
+		
+		
+	}
+	*/
+	public static String makePhrase()
+	
+	{
+		 String[] wordListOne = {"24/7","multi-Tier","30,OOO foot","B-to-B","win-win","frontend", "web-based" ,"pervasive" , "smart", "six-sigma","critical-path", "dynamic"}; 
+		 String[] wordListTwo = {"empowered", "sticky", "valued-added", "oriented", "centric", "distributed", "clustered", "branded","outside-the-box", "positioned", "networked", "focused", "leveraged", "aligned", "targeted", "shared", "cooperative", "accelerated"}; 
+		 String[] wordListThree = {"process", "tipping point", "solution", "architecture", "core competency", "strategy", "mindshare", "portal", "space", "vision", "paradigm", "mission"}; 
+		 
+		 // find out how many words are in each list 
+		  int oneLength = wordListOne.length; 
+		  int twoLength = wordListTwo.length; 
+		  int threeLength = wordListThree.length; 
+		  
+		  int rand1 = (int) (Math.random() * oneLength);
+		  int rand2 = (int) (Math.random() * twoLength);
+		  int rand3 = (int) (Math.random() * threeLength);
+		  
+		  // concatenate the strings to phrase
+		  String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
+		  return ("What we need is a " + phrase);
+		  
+		}
+public static String makePhrase(String startPhrase)
+	
+	{
+		 String[] wordListOne = {"24/7","multi-Tier","30,OOO foot","B-to-B","win-win","frontend", "web-based" ,"pervasive" , "smart", "six-sigma","critical-path", "dynamic"}; 
+		 String[] wordListTwo = {"empowered", "sticky", "valued-added", "oriented", "centric", "distributed", "clustered", "branded","outside-the-box", "positioned", "networked", "focused", "leveraged", "aligned", "targeted", "shared", "cooperative", "accelerated"}; 
+		 String[] wordListThree = {"process", "tipping point", "solution", "architecture", "core competency", "strategy", "mindshare", "portal", "space", "vision", "paradigm", "mission"}; 
+		 
+		 // find out how many words are in each list 
+		  int oneLength = wordListOne.length; 
+		  int twoLength = wordListTwo.length; 
+		  int threeLength = wordListThree.length; 
+		  
+		  int rand1 = (int) (Math.random() * oneLength);
+		  int rand2 = (int) (Math.random() * twoLength);
+		  int rand3 = (int) (Math.random() * threeLength);
+		  
+		  // concatenate the strings to phrase
+		  String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
+		 // String
+		  return ("What we need is a " + phrase);
+		  
+		}
+	
+	
+	
+	}
+
+
