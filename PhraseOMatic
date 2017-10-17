@@ -7,6 +7,33 @@
 /* http://www.slate.com/articles/news_and_politics/low_concept/2015/06/justice_scalia_insult_generator_how_the_supreme_court_justice_would_mock.html
 */
 
+// Add Client / Tester / Driver Class
+/* @author cservenakt
+ *
+ */
+import java.util.Scanner;
+
+public class MainPhrase 
+{
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		//Scanner input = new Scanner(System.in);
+		
+	
+		PhraseMatic firstTalk = new PhraseMatic();
+		System.out.print(firstTalk.makePhrase());
+
+	}
+
+}
+
+
+
+
 // This class creates objects that produce random 3 word phrases
 // create semi-random three word string paired to 
 import java.util.Scanner;
