@@ -1,0 +1,16 @@
+
+public class ComputerPlayer extends Player {
+
+	public ComputerPlayer(String name, PairOfDice pod) {
+		super(name, pod);
+	}
+	
+	@Override
+	public boolean rollAgain() {
+		if(sk.getRoundTotal() < 20) {
+			return true;
+		}
+		return false;
+	}
+
+}
